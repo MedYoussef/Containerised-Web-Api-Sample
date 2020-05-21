@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  weatherapi:
+    image: ${DOCKER_REGISTRY-}weatherapi
+    build:
+      context: .
+      dockerfile: weatherApi/Dockerfile
